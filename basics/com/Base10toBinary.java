@@ -1,6 +1,6 @@
 public class Base10toBinary {
 
-    private static String convertBase10toBinary(int number) {
+    public static String convertBase10toBinary(int number) {
 
         int n = number;
         StringBuilder sb = new StringBuilder();
@@ -23,6 +23,10 @@ public class Base10toBinary {
 
         int number = 13;
         String result = convertBase10toBinary(number);
+        System.out.println("Binary of " + number + " is:" +result);
+
+        // using in-built functions
+        result = Integer.toBinaryString(number);
         System.out.println("Binary of " + number + " is:" +result);
         
     }

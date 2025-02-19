@@ -1,6 +1,6 @@
 public class BinarytoBase10 {
 
-    private static int convertBinarytoBase10(String binaryString) {
+    public static int convertBinarytoBase10(String binaryString) {
         int power2 = 1;
         int number = 0;
 
@@ -20,5 +20,10 @@ public class BinarytoBase10 {
         String binaryString = "1101";
         int result = convertBinarytoBase10(binaryString);
         System.out.println("Base10 of " + binaryString + " is: " + result );
+
+        // using in-built functions
+        result = Integer.parseInt(binaryString, 2);
+        System.out.println("Base10 of " + binaryString + " is: " + result );
+
     }
 }
